@@ -73,12 +73,12 @@ function countdown() {
     /* 秒 */
     var sec = Math.floor(days / 1000);
 
-    /* 10日を切ったら黄色、3日を以内になったら赤にする */
+    /* 10日を切ったら黄色、4日を切ったら赤にする */
     if (day < 10) {
         $("#day").css('color', 'yellow');
         $("#time").css('color', 'yellow');
     }
-    if (day <= 3) {
+    if (day < 4) {
         $("#day").css('color', 'red');
         $("#time").css('color', 'red');
     }
