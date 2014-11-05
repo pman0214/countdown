@@ -61,6 +61,16 @@ function countdown() {
     var end = new Date($('#dst_time').html());
     var days = end - start;
 
+    /* 終了時は表示を変更 */
+    if (days <= 0) {
+	$("#abst").text("");
+	$("#day").text("");
+	$("#time").text("終");
+        $("#time").css('text-align', 'right');
+        $("#time").css('width', '90%');
+	return;
+    }
+
     /* 日 */ 
     var day = Math.floor(days / (24*60*60*1000));
     days -= day * 24*60*60*1000;
