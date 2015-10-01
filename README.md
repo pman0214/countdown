@@ -1,5 +1,8 @@
 # カウントダウンJavaScript
 
+## Requirements
+- jQuery（CDNから読み込み）
+
 ## 概要
 - 特定の日時までカウントダウンをするJavaScriptです．
 	- 10日未満になるとカウンタが黄色くなります．
@@ -12,5 +15,5 @@
 - `html`配下のファイルをHTTPサーバにアップロードします．
 
 ## Copyright, License
-- Copyright (c) 2014, Shigemi ISHIDA
+- Copyright (c) 2015, Shigemi ISHIDA
 - This software is released under the BSD 3-clause license: See `LICENSE`.
